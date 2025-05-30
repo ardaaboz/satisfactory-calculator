@@ -15,13 +15,13 @@ This calculator tells you exactly what materials you need to produce any item in
 
 ### Download
 
-- **[Download ZIP file](https://github.com/ardaaboz/satisfactory-calculator/releases/latest/download/SatisfacotryCalculator.zip)**
+- **[Download RAR file](https://github.com/ardaaboz/satisfactory-calculator/releases/download/v1.0.0/Satisfactory.Calculator.rar)**
 
 
 ### How to Run
 
 **Windows Users (Easiest):**
-1. Extract the ZIP file
+1. Extract the RAR file
 2. Double-click `SatisfactoryCalculator.bat`
 
 **Everyone Else:**
