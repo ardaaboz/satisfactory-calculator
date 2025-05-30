@@ -1,4 +1,4 @@
-// Main calculator application
+package com.example.demo;// Main calculator application
 import java.util.Scanner;
 
 public class ProductionCalculator {
@@ -7,7 +7,6 @@ public class ProductionCalculator {
     public static void printProductionChain(CraftableItem targetItem, double productionMultiplier, int indentLevel) {
         // Base case: raw materials have no recipe requirements
         if (targetItem.recipeRequirements == null) {
-            System.out.println();
             return;
         }
 
@@ -36,7 +35,7 @@ public class ProductionCalculator {
 
         // Main application loop
         while (programRunning) {
-            System.out.println("----------Welcome to Satisfactory Calculator!----------");
+            System.out.println("Welcome to Satisfactory Calculator!");
             System.out.println("1. Calculate");
             System.out.println("2. Exit");
             System.out.print("\nSelect an option: ");
@@ -53,10 +52,10 @@ public class ProductionCalculator {
                     userInput.nextLine(); // Consume the newline character
 
                     // Look up the requested item in our database
-                    if (gameDatabase.itemLookupTable.containsKey(requestedItemName.toLowerCase())) {
+                    if (gameDatabase.itemLookupTable.containsKey(requestedItemName)) {
                         System.out.println("\nItem found!");
 
-                        CraftableItem requestedItem = gameDatabase.itemLookupTable.get(requestedItemName.toLowerCase());
+                        CraftableItem requestedItem = gameDatabase.itemLookupTable.get(requestedItemName);
 
                         // Display the main production goal
                         System.out.println();
@@ -69,8 +68,9 @@ public class ProductionCalculator {
 
                         // Show the complete production chain
                         printProductionChain(requestedItem, productionScale, startingDepth);
+                        System.out.println();
                     } else {
-                        System.out.println("\nItem not found!\n");
+                        System.out.println("Item not found!");
                     }
                     break;
                 case 2:
