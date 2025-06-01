@@ -15,7 +15,7 @@ This calculator tells you exactly what materials you need to produce any item in
 
 ### Download
 
-- **[Download RAR file](https://github.com/ardaaboz/satisfactory-calculator/releases/download/v1.0.0/Satisfactory.Calculator.rar)**
+- **[Download RAR file](https://github.com/ardaaboz/satisfactory-calculator/releases)**
 
 
 ### How to Run
